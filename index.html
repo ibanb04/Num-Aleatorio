@@ -1,0 +1,96 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aleatorio</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="fonts/animate.css">
+  <style>
+    body {
+      background-image: url("images/swirl_pattern.png");
+    }
+  </style>
+</head>
+	<body>
+	<div class="hide-on-small-only blue darken-3">
+            <br><h1 class="white-text center"> &nbsp;Número Aleatorio</h1>  
+    </div>
+    <div class="fondo">
+    	<br><br>
+  <section>
+     <div class="row white" style="max-width: 50%;">	
+      <div class="col l12 z-depth-5" style="padding: 0px;">
+      	<br>
+      	<div class="row">
+      		<div class="col s12 m8 l8">
+      			<div class="number-result">
+      				<h1 id="resultado">&nbsp;&nbsp;</h1>
+      			</div>
+      		</div>
+      		<div class="col s12 m7 l4">
+      			 <div class="input-field ">
+          <input id="min" type="number" >
+          <label  for="min">MIN</label>
+        </div>
+        <div class="input-field ">
+          <input id="max" type="number" >
+          <label for="max">MAX</label>
+        </div>
+      		</div>
+      	</div>
+      	
+      	<center>
+      <a class="blue darken-2 waves-effect waves-light btn-large" onclick="generar();" style="min-width: 100%;">GENERAR</a>
+      	</center>
+    
+      </div>
+		</div>
+		<br>  
+   </section>
+	</div>
+  </body>
+  	<footer class="page-footer blue darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 l6">
+					<h5> <i class="fas fa-fire"></i> Arquitectura del software</h5>
+					<p style="font-weight: 200;"><big> &nbsp;&nbsp;Número aleatorio</big></p>
+				</div>
+				<div class="col hide-on-small-only l2"></div>
+
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+       <div class="row">
+        <div class="col l6">
+          <h5>Developed by:</h5>
+               <a class="grey-text text-lighten-2" href="https://github.com/ibanb04">Ivan Bettin</a>
+        
+        </div>
+        <div class="col l12">
+          <div class="col s12 m6 l4" style="line-height: 2;">
+        </div>
+         
+        </div>
+      </div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Materialize.updateTextFields();
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+		
+	   });
+	</script>
+ 
+</body>
+</html>
